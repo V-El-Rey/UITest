@@ -91,7 +91,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8557461428615873598}
+        m_TargetAssemblyTypeName: ExchangeUiView, Assembly-CSharp
+        m_MethodName: OnCancelButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &230044937356839732
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +463,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2125016563436402388}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8557461428615873598}
+        m_TargetAssemblyTypeName: ExchangeUiView, Assembly-CSharp
+        m_MethodName: OnApplyButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &867952369562275228
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,6 +1019,7 @@ GameObject:
   - component: {fileID: 1986107587627456180}
   - component: {fileID: 1986107587627456181}
   - component: {fileID: 1986107587627456182}
+  - component: {fileID: 8557461428615873598}
   m_Layer: 0
   m_Name: CurrencyChange
   m_TagString: Untagged
@@ -1085,6 +1110,23 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8557461428615873598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986107587627456136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e90e163cfa65fa41a633ff31135b6e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextField: {fileID: 805756534453139700}
+  ExchangeRatio: {fileID: 5397922325699553048}
+  InterValue: {fileID: 677467668203451701}
+  CoinValue: {fileID: 7228270906842303379}
+  CredsValue: {fileID: 5121168748764805210}
 --- !u!1 &2440615359055706115
 GameObject:
   m_ObjectHideFlags: 0
