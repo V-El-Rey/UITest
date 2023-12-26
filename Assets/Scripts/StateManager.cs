@@ -37,7 +37,7 @@ public class StateManager : MonoBehaviour
         m_gameStateScreensManager = new ScreenManager<StateScreen>();
         m_gameStateScreensManager.States[StateScreen.Main] = new MainScreen(StateScreen.Main, m_gameStateScreensManager, m_mainViewValuesUpdateModel, m_mainViewModel);
         m_gameStateScreensManager.States[StateScreen.Exchange] = new ExchangeScreen(StateScreen.Exchange, m_gameStateScreensManager, m_exchangeModel);
-        m_gameStateScreensManager.States[StateScreen.Reserves] = new ReservesScreen(StateScreen.Reserves, m_gameStateScreensManager);
+        m_gameStateScreensManager.States[StateScreen.Reserves] = new ReservesScreen(StateScreen.Reserves, m_gameStateScreensManager, m_reservesModel);
         m_gameStateScreensManager.CurrentState = m_gameStateScreensManager.States[StateScreen.Main];
         m_gameStateScreensManager.InitScreenManager();
     }
